@@ -2,8 +2,10 @@ name: Deploy Quartz
 on:
   push:
     branches:
-      - main  # 본인의 메인 브랜치 이름이 main이라면 main으로 수정
+      - main
+  workflow_dispatch: # <-- 이 줄을 추가하십시오 (수동 실행 버튼 생성)
 
+# ... 나머지 내용은 동일 ...
 permissions:
   contents: write
 
