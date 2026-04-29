@@ -5,9 +5,11 @@ on:
       - main
   workflow_dispatch: # <-- 이 줄을 추가하십시오 (수동 실행 버튼 생성)
 
-# ... 나머지 내용은 동일 ...
+
 permissions:
-  contents: write
+  contents: write   # 저장소 내용을 읽고 쓸 권한
+  pages: write      # GitHub Pages에 배포할 권한 (추가)
+  id-token: write   # 배포용 인증 토큰을 생성할 권한 (추가)
 
 jobs:
   build:
