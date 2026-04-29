@@ -9,3 +9,16 @@ tsconfig.tsbuildinfo
 private/
 .replit
 replit.nix
+
+# Obsidian 관련 설정 폴더 (절대 올리면 안 됨)
+.obsidian/
+.smtcmp_json_db/
+Template/
+Clipboard.md
+
+# 특정 파일이나 확장자 제외 (예: 임시 파일)
+*.tmp
+.DS_Store
+
+# 만약 '비공개'라는 폴더를 만들었다면 그 안의 내용도 제외
+content/private/
