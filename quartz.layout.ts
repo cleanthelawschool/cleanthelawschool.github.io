@@ -1,6 +1,8 @@
 import { PageLayout, SharedLayout } from "./quartz/cfg"
 import * as Component from "./quartz/components"
 
+
+
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
@@ -24,6 +26,7 @@ export const defaultContentPageLayout: PageLayout = {
     Component.ArticleTitle(),
     Component.ContentMeta(),
     Component.TagList(),
+    CustomFrontmatter(), // 'Component.' 없이 직접 호출
   ],
   left: [
     Component.PageTitle(),
@@ -66,3 +69,5 @@ export const defaultListPageLayout: PageLayout = {
   ],
   right: [],
 }
+
+
